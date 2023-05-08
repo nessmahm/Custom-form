@@ -1,12 +1,16 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+body{
+  background-color: #dcdee7;
 
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +39,229 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.formMaker {
+  display: flex;
+  width: 80%;
+  margin:50px auto;
+}
+.formMaker .form-element {
+  display: flex;
+  flex-direction: column;
+
+}
+.field-options-section{
+  display:flex;
+  flex-direction: column;
+  width: 200px;
+  transition: scale 250ms ease-in-out;
+
+
+}
+
+.field-options-section .option {
+  margin:10px;
+  border-radius:15px;
+  box-shadow: #8484ad;
+  padding:10px;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  background-color:#1a3e77;
+
+
+}
+.field-options-section .option:hover{
+  transform: scale(1.13);
+}
+.form-section {
+  margin-left:50px;
+  border-radius:15px;
+  box-shadow: #575656;
+  padding:10px;
+  text-align: center;
+  font-weight: 500;
+  color: #575757;
+}
+
+.select-choice {
+  display:flex;
+
+}
+.radio-choice {
+  margin: 10px;
+}
+.box {
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;}
+.box label {
+  margin-right:20px;
+}
+.design-form{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.modal-element{
+  margin:20px;
+}
+.modal-element {
+
+}
+
+.add-more {
+  background-color: #9f9e9e;
+  border-radius: 15px;
+  color:white;
+  width:100px;
+  height:40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-more:hover{
+  cursor: pointer;
+  transform: scale(1.08);
+}
+.option-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.option-section input{
+  margin-right: 10px;
+
+}
+.form-maker {
+  display:flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  min-height: 400px;
+
+}
+.form-maker .element {
+  margin-top: 20px;
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://formulaires.univ-amu.fr/sites/formulaires.univ-amu.fr/themes/webfom_theme/images/webform.svg");
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+.home h1{
+  color: #1a3e77;
+  font-weight: bold;
+
+
+
+}
+.home button {
+  width: 150px;
+  height: 50px;
+  background-color: #1a3e77;
+  border-radius: 15px;
+  border-color: #1a3e77;
+  color:white;
+  font-family: "Helvetica Neue",Helvetica,Arial ;
+  font-size:20px;
+  text-align: center;
+
+
+}
+.home button:hover{
+  transform: scale(1.12);
+}
+header {
+  display:flex;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  background-color:  #1a3e77 ;
+  margin:0;
+  z-index: 1;
+  position: fixed;
+  top:0;
+
+}
+header a {
+  margin:20px;
+  text-decoration:none ;
+  color:white;
+  font-family: "Helvetica Neue",Helvetica,Arial ;
+  font-size:20px;
+}
+header span:hover {
+  transform: scale(1.22);
+  color:white;
+}
+.bg{
+  background-color:#1a3e77;
+}
+@media (max-width:900px) {
+  .formMaker{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .field-options-section{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+  align-items: center;
+    justify-content: center;
+  }
+  .field-options-section span {
+    width: 150px;
+  }
+
+}
+
+.dash-page  {
+  width: 70%;
+  margin: 0 auto;
+
+
+}
+.dashboard{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:80px;
+}
+.dash{
+  height:50px;
+  background-color: #687891;
+  margin:20px;
+  border-radius:15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding:20px
+}
+.dash:hover {
+  transform:scale(1.12);
+  cursor: pointer;
 }

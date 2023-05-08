@@ -1,0 +1,43 @@
+[
+  {
+    "type": "singleline",
+    "elements": {
+      "label": "",
+      "instructions":"",
+      "placeholder": "",
+      "initialValue": "",
+      "charavterLimit": [0,255],
+      "Visibility": ["hidden","visible"]
+    }
+  },{
+  "type": "singleline",
+  "elements": {
+    "label": "",
+    "instructions":"",
+    "placeholder": "",
+    "initialValue": "",
+    "charavterLimit": [0,255],
+    "Visibility": ["hidden","visible"]
+  }
+},{
+  "type": "singleline",
+  "elements": {
+    "label": "",
+    "instructions":"",
+    "placeholder": "",
+    "initialValue": "",
+    "charavterLimit": [0,255],
+    "Visibility": ["hidden","visible"]
+  }
+},{
+  "type": "singleline",
+  "elements": {
+    "label": "",
+    "instructions":"",
+    "placeholder": "",
+    "initialValue": "",
+    "charavterLimit": [0,255],
+    "Visibility": ["hidden","visible"]
+  }
+}
+]

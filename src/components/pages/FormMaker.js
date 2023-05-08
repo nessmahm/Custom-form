@@ -17,7 +17,7 @@ import { useParams } from 'react-router-dom';
 function FormMaker() {
     const { tableData, setTableData } = useContext(FormListContext);
     const {dashboard,setDashboard} = useContext(DashboardContext);
-    const [data , setData]= useState();
+    const [data , setData]= useState([]);
     const {index}=useParams();
     const [items, setItems] = useState([]);
     const [tableLabel, setTableLabel] = useState( "Label");
@@ -27,6 +27,8 @@ function FormMaker() {
         const items = JSON.parse(localStorage.getItem('dashboard'));
         if (items) {
             setItems(items);
+            setData(items[index]);
+            console.log("data",data);
         }
     }, [tableData,dashboard]);
     function handleInputChange(name, value) {
@@ -90,7 +92,7 @@ const handleDashboard = () =>
                     </Button>
                         <a  className={"bg me-3"} variant="primary"
 
-                                 onClick={()=> ( !index ?  localStorage.setItem('dashboard', JSON.stringify([...items,{ ["tableData"]:tableData , ["tableLabel"]: tableLabel} ])) : console("Update  Table") )}>
+                                 onClick={()=> ( !index ?  localStorage.setItem('dashboard', JSON.stringify([...items,{ ["tableData"]:tableData , ["tableLabel"]: tableLabel} ])) : "Update  Table" )}>
                             Save Changes
                         </a>
                         <Button  className={"bg "} variant="primary" onClick={handleShowCode}>
